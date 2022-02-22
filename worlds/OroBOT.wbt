@@ -21,8 +21,8 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation -0.14 -0.67 -0.73 2.5
-  position 2 0.8 -1.7
+  orientation -0.17454713401200422 -0.6205959488143061 -0.7644566477724337 2.2347108019391198
+  position 1.41382852349858 1.3897002575748458 -2.1847286886596007
   follow "orobot"
 }
 TexturedBackground {
@@ -39,42 +39,9 @@ SpotLight {
   location 15 10 -5
   castShadows TRUE
 }
-DEF FLOOR Solid {
-  translation -5 0 -5
-  rotation 0 1 0 -0.03
-  children [
-    Shape {
-      appearance Appearance {
-        material Material {
-          ambientIntensity 1
-          diffuseColor 1 1 1
-        }
-        texture ImageTexture {
-          url [
-            "textures/grid_simple.jpg"
-          ]
-        }
-        textureTransform TextureTransform {
-          scale 20 20
-        }
-      }
-      geometry ElevationGrid {
-        xDimension 200
-        xSpacing 0.25
-      }
-    }
-  ]
-  boundingObject Transform {
-    translation 5 0 5
-    rotation -1 0 0 1.5707963267948966
-    children [
-      Plane {
-      }
-    ]
-  }
-  recognitionColors [
-    0 0 0
-  ]
-}
 DEF OROBOT Orobot {
+}
+Floor {
+  rotation -1 0 0 1.5707996938995747
+  size 50 50
 }
