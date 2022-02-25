@@ -1,0 +1,12 @@
+[Dolphin]
+AdditionalInfo=Details_Size,Details_Date,Details_Type,CustomizedDetails
+GroupedSorting=true
+SortRole=type
+Sorting=6
+Timestamp=2018,9,28,10,56,29
+Version=3
+ViewMode=1
+VisibleRoles=Details_text,Details_size,Details_date,Details_permissions,Details_type,Details_path,CustomizedDetails
+
+[Settings]
+HiddenFilesShown=true

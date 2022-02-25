@@ -4,7 +4,9 @@ simulationViewPerspectives: 000000ff000000010000000200000000000002e7010000000601
 sceneTreePerspectives: 000000ff0000000100000002000000c0000000fc0100000006010000000200
 maximizedDockId: -1
 centralWidgetVisible: 1
-orthographicViewHeight: 1
+projectionMode: PERSPECTIVE
+renderingMode: PLAIN
+orthographicViewHeight: 1.68474
 textFiles: -1
 robotWindow: orobot
 consoles: Console:All:All

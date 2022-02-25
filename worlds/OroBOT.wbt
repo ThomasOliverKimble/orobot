@@ -2,8 +2,8 @@
 WorldInfo {
   info [
     "Description"
-    "Author: Tomislav Horvat <thorvat27@gmail.com>"
-    "Date: 10.09.2017"
+    "Author: Thomas Kimble"
+    "Date: 22.02.2022"
   ]
   window "orobot"
   physics "contact_points_physics"
@@ -21,27 +21,39 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation -0.17454713401200422 -0.6205959488143061 -0.7644566477724337 2.2347108019391198
-  position 1.41382852349858 1.3897002575748458 -2.1847286886596007
+  orientation -0.075037974862647 -0.6791518275259343 -0.7301521057264 2.4904201730363433
+  position 1.6368276815299732 0.9683176156907589 -1.1989545572774452
   follow "orobot"
 }
 TexturedBackground {
 }
+Floor {
+  rotation -1 0 0 1.5707996938995747
+  size 200 200
+  tileSize 2 2
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/ThomasOliverKimble/orobot/main/worlds/textures/grid_simple.jpg"
+      ]
+    }
+    roughness 1
+    metalness 0
+  }
+}
 DirectionalLight {
-  ambientIntensity 0.4
+  ambientIntensity 0.5
   direction 0.4 -0.5 -0.3
-  intensity 0.9
+  intensity 2
 }
 SpotLight {
   ambientIntensity 0.4
   beamWidth 0.4
   direction -0.58 -0.8 0.28
+  intensity 2
   location 15 10 -5
   castShadows TRUE
 }
 DEF OROBOT Orobot {
-}
-Floor {
-  rotation -1 0 0 1.5707996938995747
-  size 50 50
+  controller "OrobotController"
 }

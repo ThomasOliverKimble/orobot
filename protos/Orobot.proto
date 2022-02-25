@@ -3,13 +3,19 @@
 # Supervisor that manages the Pioneer square path benchmark.
 
 PROTO Orobot [
-  field SFString window "orobot"
+  field SFBool     supervisor    TRUE
+  field SFVec3f    translation   0 0.321642 0
+  field SFRotation rotation      1 0 0 3.14159
+  field SFString   window        "orobot"
+  field SFString   controller    "SupervisorController"
 ]
 {
 Robot {
-  supervisor TRUE
-  translation 0 0.321642 0
-  rotation 1 0 0 3.14159
+  supervisor IS supervisor
+  translation IS translation
+  rotation IS rotation
+  window IS window
+  controller IS controller
   children [
     Receiver {
     }
@@ -2098,7 +2104,5 @@ Robot {
       0.088 0 0
     ]
   }
-  controller "OrobotController"
-  window IS window
 }
 }
