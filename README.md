@@ -1,3 +1,3 @@
-# orobot
+# OroBot
 
-Orobot Webots R2022a simulation.
+OroBot Webots R2022a simulation.
