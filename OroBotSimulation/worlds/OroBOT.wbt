@@ -34,7 +34,7 @@ Floor {
   appearance PBRAppearance {
     baseColorMap ImageTexture {
       url [
-        "https://raw.githubusercontent.com/ThomasOliverKimble/orobot/main/OrobotSimulation/worlds/textures/grid_simple.jpg"
+        "https://raw.githubusercontent.com/ThomasOliverKimble/orobot/main/OroBotSimulation/worlds/textures/grid_simple.jpg"
       ]
     }
     roughness 1
