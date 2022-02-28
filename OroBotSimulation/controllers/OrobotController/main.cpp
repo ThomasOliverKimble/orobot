@@ -1,4 +1,4 @@
-
+ 
 #include <webots/Supervisor.hpp>
 #include <webots/Motor.hpp>
 #include <webots/Robot.hpp>
@@ -23,12 +23,8 @@
 #include "joystick.h"
 
 
-
-
-
-
 #define TIME_STEP   10
-#define MAX_NUM_MOTORS   40
+#define MAX_NUM_MOTORS   40 
 
 // load global config
 int readGlobalConfig();

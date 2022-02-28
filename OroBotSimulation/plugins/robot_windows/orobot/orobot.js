@@ -1,7 +1,10 @@
+import RobotWindow from 'https://cyberbotics.com/wwi/R2022b/RobotWindow.js';
+
 window.onload = function() {
-  window.robotWindow = webots.window("orobot");
-  window.robotWindow.setTitle("Orobot Robot Window");
-}
+  window.robotWindow = new RobotWindow();
+  window.robotWindow.setTitle('Orobot Robot Window');
+  window.robotWindow.send("Robot window loaded.");
+};
 
 function updateValue(name, value) {
   document.getElementById('parameter_' + name + '_display').innerHTML = value;
