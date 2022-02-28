@@ -82,7 +82,7 @@ int main(int argc, char **argv)
 
 
 
-    cout << "creating controller" << endl;
+    //cout << "creating controller" << endl;
     Controller controller(Td);
 
     cout<<"CONTROLLER CREATED"<<endl;
@@ -116,7 +116,7 @@ cout << "STARTING THE LOOP" << endl;
 
         const std::string text = robotSim.wwiReceiveText();
         if (!text.empty())
-          cout << "Received " << text << endl;
+          cout << "MESSAGE RECEIVED: " << text << endl;
 
         // parse parameter string
         controller.parseParameterString(text);
@@ -125,7 +125,7 @@ cout << "STARTING THE LOOP" << endl;
         size_t found; 
         found = text.find("restart");
         if (found!=string::npos){
-            cout << "Restarting Simulation" << endl;
+            cout << "RESTARTING SIMULATION" << endl;
             robotSim.resetOrobotSimulation();
         }
         

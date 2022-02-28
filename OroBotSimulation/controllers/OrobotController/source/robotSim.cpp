@@ -76,7 +76,7 @@ RobotSim :: RobotSim(int TIME_STEP)
     ps_motor.resize(NUM_MOTORS);
 
     // get the motors
-    cout << "connecting to motors" << endl;
+    //cout << "connecting to motors" << endl;
 
 
 
@@ -87,7 +87,7 @@ RobotSim :: RobotSim(int TIME_STEP)
         ps_motor[i]->enable(TIME_STEP);
         rm_motor[i]->enableTorqueFeedback(TIME_STEP);
     }
-    cout << "motors collected" << endl;
+    //cout << "motors collected" << endl;
 
    
     
@@ -286,7 +286,6 @@ RobotSim::GetFeetGPS(double *FL_feet_gpos, double *FR_feet_gpos, double *HL_feet
 void
 RobotSim::set2segFeetParam(double spring1, double spring2)
 {   
-
     const char *feetDefs[4]={"foot_fl", "foot_fr", "foot_hl", "foot_hr"};
     webots::Node *feet_node[4];
 
@@ -336,11 +335,12 @@ RobotSim::set2segFeetParam(double spring1, double spring2)
 
 
     double eta = 2;
-
+    /*
     for(int i=0; i<4; i++){
         springConstant1 = feet_node[i]->getField("springConstant1"); //wrist pitch
         springConstant2 = feet_node[i]->getField("springConstant2"); //wrist roll
         springConstant3 = feet_node[i]->getField("springConstant3"); //fingers
+
         springConstant1->setSFFloat(spring1);
         springConstant2->setSFFloat(spring2);
         springConstant3->setSFFloat(spring3);
@@ -363,6 +363,7 @@ RobotSim::set2segFeetParam(double spring1, double spring2)
         cout << "D1: " << damping1 << "\tD2: " << damping2 << "\tD3: " << damping3 << endl;
 
     }
+    */
 
 }
 
