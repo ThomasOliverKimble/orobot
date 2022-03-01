@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="orobot.css">
-        <script type="module" src="orobot.js"></script> 
+        <link rel="icon" type="image/png" href="https://cyberbotics.com/assets/images/webots.png">
     </head>
     
     <body>
@@ -10,7 +10,7 @@
             <h3>Orobot Simulation Parameters</h3>
             <table>
                 <tr>
-                    <td>Spine CPG scaling:</td>
+                    <td>Spine CPG scaling TEMP:</td>
                     <td class="display" id='parameter_scaling_display'>0.4</td>
                     <td style="text-align:right">0</td>
                     <td><input id='parameter_scaling_range' oninput="updateValue('scaling', this.value)" type="range" min="0" max="0.7" value="0.4" step="0.01"></td>
@@ -37,9 +37,12 @@
                 </tr>
             </table>
             <div class="button-container" onclick="restartPressed()">
-                <button>Restart simulation with new parameter values</button>
+                <button class="robotwindow-button ">Restart simulation with new parameter values</button>
             </div>
         </div>
+
+        <script type="module" src="orobot.js"></script>
+      
     </body>
 </html>
 

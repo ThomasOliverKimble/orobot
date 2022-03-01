@@ -41,7 +41,7 @@ Controller :: Controller(double time_step) : HJs(12), HJs_g(12), HJfl(5), HJfr(5
     //############################ PARAMETERS ########################################################
     getParameters();
 
-    cout<<"I successfully read the parameters"<<endl;
+    cout<<"PARAMETERS READ SUCCESSFULLY"<<endl;
     state=INITIAL;
 
 
@@ -77,8 +77,8 @@ Controller :: Controller(double time_step) : HJs(12), HJs_g(12), HJfl(5), HJfr(5
 
 
 
-    cout << "NUM MOTORS:\t" << NUM_MOTORS << endl;
-    cout << "SPINE_SIZE:\t" << SPINE_SIZE << endl;
+    //cout << "NUM MOTORS:\t" << NUM_MOTORS << endl;
+    //cout << "SPINE_SIZE:\t" << SPINE_SIZE << endl;
 
     feetReference = midStance;
 
@@ -456,15 +456,17 @@ Controller :: initOrobot()
     double kin_off=or_Ltot*(1-or_deltaphi)-IG+or_deltaFH;  //dkin = or_deltaFH - IG + or_Ltot*phi
     or_deltaLf=kin_off  + legs_offset;
     or_deltaLh=0        + legs_offset;
+    /*
     cout << "or_deltaFH= " << or_deltaFH  << endl;
     cout << "or_deltaLf= " << or_deltaLf <<" \t or_deltaLh= " << or_deltaLh << endl;
     cout << "delta_phi= " << or_deltaphi  << endl;
     cout << "IG= " << IG  << endl;
     cout << "or_Lf= " << or_Lf  << endl;
+    */
 
 
     // Phase
-    cout << "Duty  = " << Duty << endl;
+    //cout << "Duty  = " << Duty << endl;
     //cout << "deltaPhi = " << or_deltaphi << endl;
 
     phShifts(0)=or_phase_FL;
@@ -541,9 +543,11 @@ Controller :: initOrobot()
     swing_width(2)=or_deltaWh;
     swing_width(3)=-or_deltaWh;
 
+    /*
     cout << "ellipse_a= " << ellipse_a.transpose()  << endl;
     cout << "or_deltaLf= " << or_deltaLf <<" \t or_deltaLh= " << or_deltaLh << endl;
     cout << "delta_phi= " << or_deltaphi  << endl;
+    */
 
 }
 

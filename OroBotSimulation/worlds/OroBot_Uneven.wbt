@@ -1,7 +1,7 @@
 #VRML_SIM R2022a utf8
 WorldInfo {
+  title "OroBot Simulation on Uneven Terrain"
   info [
-    "Description"
     "Author: Thomas Kimble"
     "Date: 25.02.2022"
   ]
