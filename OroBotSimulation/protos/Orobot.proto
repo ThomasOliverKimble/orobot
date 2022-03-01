@@ -44,12 +44,7 @@ Robot {
           rotation 1 0 0 1.5708
           children [
             DEF HEAD Shape {
-              appearance Appearance {
-                material Material {
-                  diffuseColor 0.9 0.9 0.9
-                  shininess 0.5
-                  specularColor 0.1 0.1 0.1
-                }
+              appearance Marble {
               }
               geometry IndexedFaceSet {
                 coord Coordinate {
@@ -77,12 +72,7 @@ Robot {
           rotation 1 0 0 1.5708
           children [
             DEF LOWER_YAW Shape {
-              appearance Appearance {
-                material Material {
-                  diffuseColor 0.9 0.9 0.9
-                  shininess 0.5
-                  specularColor 0.1 0.1 0.1
-                }
+              appearance Marble {
               }
               geometry IndexedFaceSet {
                 coord Coordinate {
@@ -123,11 +113,8 @@ Robot {
                     translation -0.013 0 0
                     children [
                       DEF RX28 Shape {
-                        appearance Appearance {
-                          material Material {
-                            diffuseColor 0.152941 0.152941 0.152941
-                            shininess 0.5
-                          }
+                        appearance RoughPolymer {
+                          baseColor 0.1 0.1 0.1
                         }
                         geometry Box {
                           size 0.05 0.037 0.037
@@ -143,12 +130,7 @@ Robot {
                         rotation 1 0 0 -10.9956
                         children [
                           DEF SPINE1 Shape {
-                            appearance Appearance {
-                              material Material {
-                                diffuseColor 0.9 0.9 0.9
-                                shininess 0.5
-                                specularColor 0.1 0.1 0.1
-                              }
+                            appearance Marble {
                             }
                             geometry IndexedFaceSet {
                               coord Coordinate {
@@ -201,12 +183,8 @@ Robot {
                                   rotation 0 1 0 3.14159
                                   children [
                                     DEF MOTOR Shape {
-                                      appearance Appearance {
-                                        material Material {
-                                          diffuseColor 0.117647 0.117647 0.117647
-                                          shininess 0.5
-                                          specularColor 0.1 0.1 0.1
-                                        }
+                                      appearance RoughPolymer {
+                                        baseColor 0.1 0.1 0.1
                                       }
                                       geometry IndexedFaceSet {
                                         coord Coordinate {
@@ -297,12 +275,7 @@ Robot {
                                                   rotation 0 0 1 0
                                                   children [
                                                     DEF HUMERUS Shape {
-                                                      appearance Appearance {
-                                                        material Material {
-                                                          diffuseColor 0.9 0.9 0.9
-                                                          shininess 0.5
-                                                          specularColor 0.1 0.1 0.1
-                                                        }
+                                                      appearance Marble {
                                                       }
                                                       geometry IndexedFaceSet {
                                                         coord Coordinate {
@@ -448,12 +421,7 @@ Robot {
                                                                       rotation 1 0 0 3.14159
                                                                       children [
                                                                         DEF CRUS Shape {
-                                                                          appearance Appearance {
-                                                                            material Material {
-                                                                              diffuseColor 0.9 0.9 0.9
-                                                                              shininess 0.5
-                                                                              specularColor 0.1 0.1 0.1
-                                                                            }
+                                                                          appearance Marble {
                                                                           }
                                                                           geometry IndexedFaceSet {
                                                                             coord Coordinate {
@@ -882,12 +850,7 @@ Robot {
                               rotation 1 0 0 -4.71239
                               children [
                                 DEF SPINE2 Shape {
-                                  appearance Appearance {
-                                    material Material {
-                                      diffuseColor 0.9 0.9 0.9
-                                      shininess 0.5
-                                      specularColor 0.1 0.1 0.1
-                                    }
+                                  appearance Marble {
                                   }
                                   geometry IndexedFaceSet {
                                     coord Coordinate {
@@ -942,12 +905,7 @@ Robot {
                                         rotation 1 0 0 1.5708
                                         children [
                                           DEF SPINE3 Shape {
-                                            appearance Appearance {
-                                              material Material {
-                                                diffuseColor 0.9 0.9 0.9
-                                                shininess 0.5
-                                                specularColor 0.1 0.1 0.1
-                                              }
+                                            appearance Marble {
                                             }
                                             geometry IndexedFaceSet {
                                               coord Coordinate {
@@ -992,12 +950,7 @@ Robot {
                                                   rotation 1 0 0 1.5708
                                                   children [
                                                     DEF SPINE4 Shape {
-                                                      appearance Appearance {
-                                                        material Material {
-                                                          diffuseColor 0.9 0.9 0.9
-                                                          shininess 0.5
-                                                          specularColor 0.1 0.1 0.1
-                                                        }
+                                                      appearance Marble {
                                                       }
                                                       geometry IndexedFaceSet {
                                                         coord Coordinate {
@@ -1042,12 +995,7 @@ Robot {
                                                             rotation 1 0 0 1.5708
                                                             children [
                                                               DEF SPINE5 Shape {
-                                                                appearance Appearance {
-                                                                  material Material {
-                                                                    diffuseColor 0.9 0.9 0.9
-                                                                    shininess 0.5
-                                                                    specularColor 0.1 0.1 0.1
-                                                                  }
+                                                                appearance Marble {
                                                                 }
                                                                 geometry IndexedFaceSet {
                                                                   coord Coordinate {
@@ -1094,12 +1042,7 @@ Robot {
                                                                           rotation 1 0 0 1.5708
                                                                           children [
                                                                             DEF SPINE6_FRONT Shape {
-                                                                              appearance Appearance {
-                                                                                material Material {
-                                                                                  diffuseColor 0.9 0.9 0.9
-                                                                                  shininess 0.5
-                                                                                  specularColor 0.1 0.1 0.1
-                                                                                }
+                                                                              appearance Marble {
                                                                               }
                                                                               geometry IndexedFaceSet {
                                                                                 coord Coordinate {
@@ -1188,12 +1131,7 @@ Robot {
                                                                                           rotation 0 1 0 1.5708
                                                                                           children [
                                                                                             DEF FEMUR Shape {
-                                                                                              appearance Appearance {
-                                                                                                material Material {
-                                                                                                  diffuseColor 0.9 0.9 0.9
-                                                                                                  shininess 0.5
-                                                                                                  specularColor 0.1 0.1 0.1
-                                                                                                }
+                                                                                              appearance Marble {
                                                                                               }
                                                                                               geometry IndexedFaceSet {
                                                                                                 coord Coordinate {
@@ -1747,12 +1685,7 @@ Robot {
                                                                                 rotation 1 0 0 1.5708
                                                                                 children [
                                                                                   DEF SPINE6_BACK Shape {
-                                                                                    appearance Appearance {
-                                                                                      material Material {
-                                                                                        diffuseColor 0.9 0.9 0.9
-                                                                                        shininess 0.5
-                                                                                        specularColor 0.1 0.1 0.1
-                                                                                      }
+                                                                                    appearance Marble {
                                                                                     }
                                                                                     geometry IndexedFaceSet {
                                                                                       coord Coordinate {
@@ -1796,12 +1729,7 @@ Robot {
                                                                                           rotation 1 0 0 1.5708
                                                                                           children [
                                                                                             DEF SPINE9 Shape {
-                                                                                              appearance Appearance {
-                                                                                                material Material {
-                                                                                                  diffuseColor 0.9 0.9 0.9
-                                                                                                  shininess 0.5
-                                                                                                  specularColor 0.1 0.1 0.1
-                                                                                                }
+                                                                                              appearance Marble {
                                                                                               }
                                                                                               geometry IndexedFaceSet {
                                                                                                 coord Coordinate {
@@ -1847,12 +1775,7 @@ Robot {
                                                                                                     rotation 1 0 0 1.5708
                                                                                                     children [
                                                                                                       DEF SPINE10 Shape {
-                                                                                                        appearance Appearance {
-                                                                                                          material Material {
-                                                                                                            diffuseColor 0.9 0.9 0.9
-                                                                                                            shininess 0.5
-                                                                                                            specularColor 0.1 0.1 0.1
-                                                                                                          }
+                                                                                                        appearance Marble {
                                                                                                         }
                                                                                                         geometry IndexedFaceSet {
                                                                                                           coord Coordinate {

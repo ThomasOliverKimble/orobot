@@ -8,4 +8,5 @@ projectionMode: PERSPECTIVE
 renderingMode: PLAIN
 orthographicViewHeight: 1.68474
 textFiles: 0 "controllers/OrobotController/main.cpp"
+robotWindow: orobot
 consoles: Console:All:All
