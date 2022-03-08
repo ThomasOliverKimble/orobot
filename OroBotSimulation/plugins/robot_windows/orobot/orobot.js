@@ -10,7 +10,3 @@ window.updateValue  = function(name, value) {
   document.getElementById('parameter_' + name + '_display').innerHTML = value;
   window.robotWindow.send("parameter: " + name + "=" + value);
 }
-
-window.restartPressed = function() {
-  window.robotWindow.send("restart");
-}
