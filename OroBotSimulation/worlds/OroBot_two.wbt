@@ -2,9 +2,9 @@
 WorldInfo {
   info [
     "Author: Thomas Kimble"
-    "Date: 25.02.2022"
+    "Date: 22.02.2022"
   ]
-  title "OroBot Simulation on Uneven Terrain"
+  title "OroBot Simulation"
   window "orobot"
   physics "contact_points_physics"
   basicTimeStep 2
@@ -21,11 +21,25 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation -0.044950153330713255 -0.6693001876620074 -0.7416311364223775 2.4221438001674724
-  position 1.610425823252291 1.1032619180491674 -1.105104059395927
+  orientation -0.075037974862647 -0.6791518275259343 -0.7301521057264 2.4904201730363433
+  position 1.8820932250698585 0.9080808587118949 -0.8627845875746532
   follow "OroBot"
 }
 TexturedBackground {
+}
+Floor {
+  rotation -1 0 0 1.5707996938995747
+  size 200 200
+  tileSize 2 2
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/ThomasOliverKimble/orobot/main/OroBotSimulation/worlds/textures/grid_simple.jpg"
+      ]
+    }
+    roughness 1
+    metalness 0
+  }
 }
 DirectionalLight {
   ambientIntensity 0.5
@@ -40,13 +54,10 @@ SpotLight {
   location 15 10 -5
   castShadows TRUE
 }
-UnevenTerrain {
-  translation 0 -6.2 0
-  rotation -1 0 0 1.5708
-  size 200 200 10
-  xDimension 20
-  yDimension 20
-}
 DEF OROBOT Orobot {
   name "OroBot"
+}
+DEF OROBOT Orobot {
+  translation 0 0.322 1
+  name "OroBot(1)"
 }

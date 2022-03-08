@@ -1,22 +1,23 @@
 .container {
-  background-color:#686868;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container h3 {
   text-align:center; 
-  padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
   font-weight: bold;
   font-size: larger;
-  color: white;
+  color: #333;
 }
 
 .container table {
   margin: auto;
   padding: 10px; 
-  font-size: small; 
+  font-size: medium; 
   font-weight: lighter; 
-  color: #d8d8d8;
+  color: #555;
 }
 
 .display {
@@ -24,24 +25,6 @@
   font-weight:bold;
   padding-right:30px;
   padding-left: 20px;
-  color: white;
+  color: #333;
   min-width: 50px;
-}
-
-.button-container {
-  text-align:center;
-  margin-top:5px;
-  padding:15px;
-}
-
-.robotwindow-button {
-  padding: 5px;
-  border-radius: 5px;
-  border: 0px; 
-  background-color: #999999; 
-}
-
-.robotwindow-button:hover {
-  cursor: pointer;
-  background-color: white; 
 }

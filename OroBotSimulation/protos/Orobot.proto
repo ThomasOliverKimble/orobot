@@ -6,6 +6,7 @@ PROTO Orobot [
   field SFBool     supervisor    TRUE
   field SFVec3f    translation   0 0.321642 0
   field SFRotation rotation      1 0 0 3.14159
+  field SFString   name          "orobot"
   field SFString   window        "orobot"
   field SFString   controller    "OrobotController"
 ]
@@ -14,6 +15,7 @@ Robot {
   supervisor IS supervisor
   translation IS translation
   rotation IS rotation
+  name IS name
   window IS window
   controller IS controller
   children [
@@ -2011,7 +2013,6 @@ Robot {
       ]
     }
   ]
-  name "orobot"
   boundingObject Transform {
     translation 0.094 0 0
     children [
