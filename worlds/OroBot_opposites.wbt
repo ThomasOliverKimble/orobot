@@ -22,7 +22,7 @@ WorldInfo {
 }
 Viewpoint {
   orientation -0.075037974862647 -0.6791518275259343 -0.7301521057264 2.4904201730363433
-  position 1.8820932250698585 0.9080808587118949 -0.8627845875746532
+  position 3.2831138042632753 1.6062209844866502 -2.1909972971526384
   follow "OroBot"
 }
 TexturedBackground {
@@ -55,8 +55,8 @@ SpotLight {
   castShadows TRUE
 }
 DEF OROBOT Orobot {
-  translation 0 0.322 -0.5
+  translation 0 0.3 0.5
 }
 DEF OROBOT OrobotDark {
-  translation 0 0.322 0.5
+  translation 0 0.3 -0.5
 }
