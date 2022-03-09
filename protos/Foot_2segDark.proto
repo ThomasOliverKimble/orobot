@@ -1,5 +1,5 @@
  
-PROTO Foot_2seg [
+PROTO Foot_2segDark [
   field SFVec3f    position   0.11 -0.020 0
   field SFRotation rotation   0 1 0 0
   field SFFloat    zero_pitch -0.4
@@ -57,6 +57,7 @@ Transform {
                           children [
                             Shape {
                               appearance RoughPolymer {
+                                baseColor 0.1 0.1 0.1
                               }
                               geometry Box {
                                 size IS seg_2_size
