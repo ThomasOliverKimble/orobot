@@ -77,6 +77,7 @@ Transform {
                   }
                   Shape {
                     appearance RoughPolymer {
+                      baseColor 0.1 0.1 0.1
                     }
                     geometry Box {
                       size IS seg_1_size
