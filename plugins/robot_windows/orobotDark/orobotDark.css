@@ -1,0 +1,31 @@
+.container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #333;
+}
+
+.container h3 {
+  text-align:center; 
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: larger;
+  color: #ddd;
+}
+
+.container table {
+  margin: auto;
+  padding: 10px; 
+  font-size: medium; 
+  font-weight: lighter; 
+  color: #999;
+}
+
+.display {
+  text-align:right;
+  font-weight:bold;
+  padding-right:30px;
+  padding-left: 20px;
+  color: #ddd;
+  min-width: 50px;
+}
