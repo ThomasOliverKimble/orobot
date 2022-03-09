@@ -55,9 +55,7 @@ SpotLight {
   castShadows TRUE
 }
 DEF OROBOT Orobot {
-  name "OroBot"
 }
 DEF OROBOT OrobotDark {
   translation 0 0.322 1
-  name "OroBotDark"
 }
