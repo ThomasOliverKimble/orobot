@@ -1,0 +1,97 @@
+ 
+PROTO Foot_2seg [
+  field SFVec3f    position   0.11 -0.020 0
+  field SFRotation rotation   0 1 0 0
+  field SFFloat    zero_pitch -0.4
+  field SFVec3f    footLocation   0 0 0
+  field SFVec3f    seg_2_location   0 -0.02 0
+  field SFVec3f    seg_2_starting   0 -0.015 0
+  field SFVec3f    seg_1_size   0.01 0.04 0.08
+  field SFVec3f    seg_2_size   0.01 0.03 0.08
+  field SFFloat    seg_1_mass 0.024
+  field SFFloat    seg_2_mass 0.02
+  field SFFloat    springConstant1  3.5
+  field SFFloat    springConstant2  4
+  field SFFloat    springConstant3  2
+  field SFFloat    dampingConstant1  0.1
+  field SFFloat    dampingConstant2  0.1
+  field SFFloat    dampingConstant3  0.1
+  field SFString   contactMat  "footMat"
+
+
+]
+{
+Transform {
+            translation IS position
+            rotation IS rotation
+          children [
+            Hinge2Joint {
+                jointParameters HingeJointParameters {
+                    axis 0 0 1
+                    springConstant IS springConstant1
+                    dampingConstant IS dampingConstant1
+                    position IS zero_pitch
+                  }
+                  jointParameters2 JointParameters {
+                    axis 0 1 0
+                    springConstant IS springConstant2
+                    dampingConstant IS dampingConstant2
+                  }
+              endPoint DEF SEG1 Solid {
+                translation IS footLocation
+                contactMaterial IS contactMat
+                children [
+                  Transform {
+                    translation IS seg_2_starting
+                    children [
+                      HingeJoint {
+                        jointParameters HingeJointParameters {
+                          axis 0 0 1
+                          springConstant IS springConstant3
+                          dampingConstant IS dampingConstant3
+                        }
+                        endPoint DEF SEG2  Solid {
+                          translation IS seg_2_location
+                          contactMaterial IS contactMat
+                          rotation 0 0 1 0
+                          children [
+                            Shape {
+                              appearance RoughPolymer {
+                              }
+                              geometry Box {
+                                size IS seg_2_size
+                              }
+                            }
+                          ]
+                          boundingObject Box {
+                            size IS seg_2_size
+                          }
+                          physics Physics {
+                          density -1
+                          mass IS seg_2_mass
+                          }
+                        }
+                      }
+                    ]
+                  }
+                  Shape {
+                    appearance RoughPolymer {
+                    }
+                    geometry Box {
+                      size IS seg_1_size
+                    }
+                  }
+                ]
+                boundingObject Box {
+                  size IS seg_1_size
+                }
+                physics Physics {
+                density -1
+                mass IS seg_1_mass
+                }
+              }
+            }
+          ]
+        }
+}
+
