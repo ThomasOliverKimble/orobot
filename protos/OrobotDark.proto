@@ -47,6 +47,7 @@ Robot {
           children [
             DEF HEAD Shape {
               appearance RoughPolymer{
+                baseColor 0.1 0.1 0.1
               }
               geometry IndexedFaceSet {
                 coord Coordinate {
@@ -75,6 +76,7 @@ Robot {
           children [
             DEF LOWER_YAW Shape {
               appearance RoughPolymer{
+                baseColor 0.1 0.1 0.1
               }
               geometry IndexedFaceSet {
                 coord Coordinate {
@@ -115,9 +117,7 @@ Robot {
                     translation -0.013 0 0
                     children [
                       DEF RX28 Shape {
-                        appearance Marble{
-                          baseColor 0.1 0.1 0.1
-                        }
+                        appearance Marble
                         geometry Box {
                           size 0.05 0.037 0.037
                         }
@@ -133,6 +133,7 @@ Robot {
                         children [
                           DEF SPINE1 Shape {
                             appearance RoughPolymer{
+                              baseColor 0.1 0.1 0.1
                             }
                             geometry IndexedFaceSet {
                               coord Coordinate {
@@ -185,9 +186,7 @@ Robot {
                                   rotation 0 1 0 3.14159
                                   children [
                                     DEF MOTOR Shape {
-                                      appearance Marble{
-                                        baseColor 0.1 0.1 0.1
-                                      }
+                                      appearance Marble
                                       geometry IndexedFaceSet {
                                         coord Coordinate {
                                           point [
@@ -278,6 +277,7 @@ Robot {
                                                   children [
                                                     DEF HUMERUS Shape {
                                                       appearance RoughPolymer{
+                                                        baseColor 0.1 0.1 0.1
                                                       }
                                                       geometry IndexedFaceSet {
                                                         coord Coordinate {
@@ -424,6 +424,7 @@ Robot {
                                                                       children [
                                                                         DEF CRUS Shape {
                                                                           appearance RoughPolymer{
+                                                                            baseColor 0.1 0.1 0.1
                                                                           }
                                                                           geometry IndexedFaceSet {
                                                                             coord Coordinate {
@@ -853,6 +854,7 @@ Robot {
                               children [
                                 DEF SPINE2 Shape {
                                   appearance RoughPolymer{
+                                    baseColor 0.1 0.1 0.1
                                   }
                                   geometry IndexedFaceSet {
                                     coord Coordinate {
@@ -908,6 +910,7 @@ Robot {
                                         children [
                                           DEF SPINE3 Shape {
                                             appearance RoughPolymer{
+                                              baseColor 0.1 0.1 0.1
                                             }
                                             geometry IndexedFaceSet {
                                               coord Coordinate {
@@ -953,6 +956,7 @@ Robot {
                                                   children [
                                                     DEF SPINE4 Shape {
                                                       appearance RoughPolymer{
+                                                        baseColor 0.1 0.1 0.1
                                                       }
                                                       geometry IndexedFaceSet {
                                                         coord Coordinate {
@@ -998,6 +1002,7 @@ Robot {
                                                             children [
                                                               DEF SPINE5 Shape {
                                                                 appearance RoughPolymer{
+                                                                  baseColor 0.1 0.1 0.1
                                                                 }
                                                                 geometry IndexedFaceSet {
                                                                   coord Coordinate {
@@ -1045,6 +1050,7 @@ Robot {
                                                                           children [
                                                                             DEF SPINE6_FRONT Shape {
                                                                               appearance RoughPolymer{
+                                                                                baseColor 0.1 0.1 0.1
                                                                               }
                                                                               geometry IndexedFaceSet {
                                                                                 coord Coordinate {
@@ -1134,6 +1140,7 @@ Robot {
                                                                                           children [
                                                                                             DEF FEMUR Shape {
                                                                                               appearance RoughPolymer{
+                                                                                                baseColor 0.1 0.1 0.1
                                                                                               }
                                                                                               geometry IndexedFaceSet {
                                                                                                 coord Coordinate {
@@ -1688,6 +1695,7 @@ Robot {
                                                                                 children [
                                                                                   DEF SPINE6_BACK Shape {
                                                                                     appearance RoughPolymer{
+                                                                                      baseColor 0.1 0.1 0.1
                                                                                     }
                                                                                     geometry IndexedFaceSet {
                                                                                       coord Coordinate {
@@ -1732,6 +1740,7 @@ Robot {
                                                                                           children [
                                                                                             DEF SPINE9 Shape {
                                                                                               appearance RoughPolymer{
+                                                                                                baseColor 0.1 0.1 0.1
                                                                                               }
                                                                                               geometry IndexedFaceSet {
                                                                                                 coord Coordinate {
@@ -1778,6 +1787,7 @@ Robot {
                                                                                                     children [
                                                                                                       DEF SPINE10 Shape {
                                                                                                         appearance RoughPolymer{
+                                                                                                          baseColor 0.1 0.1 0.1
                                                                                                         }
                                                                                                         geometry IndexedFaceSet {
                                                                                                           coord Coordinate {
