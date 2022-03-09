@@ -23,7 +23,7 @@ WorldInfo {
 Viewpoint {
   orientation -0.075037974862647 -0.6791518275259343 -0.7301521057264 2.4904201730363433
   position 3.2831138042632753 1.6062209844866502 -2.1909972971526384
-  follow "OroBot"
+  follow "Orobot"
 }
 TexturedBackground {
 }
