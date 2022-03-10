@@ -1,4 +1,4 @@
-FROM benjamindeleze/webots-test:robot
+FROM thomaskimble/webots:testing
 ARG PROJECT_PATH
 RUN mkdir -p $PROJECT_PATH
 COPY . $PROJECT_PATH
