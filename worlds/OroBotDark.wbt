@@ -4,7 +4,7 @@ WorldInfo {
     "Author: Thomas Kimble"
     "Date: 22.02.2022"
   ]
-  title "OroBot Simulation with Two Robots"
+  title "OroBot Simulation"
   window "orobot"
   physics "contact_points_physics"
   basicTimeStep 2
@@ -21,8 +21,8 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation -0.07146858015511143 -0.6782362597563137 -0.7313602518611321 2.4836332223364974
-  position 2.257837662627206 1.119365340988475 -1.5947592542763496
+  orientation -0.075037974862647 -0.6791518275259343 -0.7301521057264 2.4904201730363433
+  position 1.6368276815299732 0.9683176156907589 -1.1989545572774452
   follow "OroBot"
 }
 TexturedBackground {
@@ -54,11 +54,6 @@ SpotLight {
   location -1 10 0
   castShadows TRUE
 }
-DEF OROBOT Orobot {
-  translation 0 0.3 -0.5
-  name "OroBot"
-}
-DEF OROBOT Orobot {
-  translation 0 0.3 0.5
-  name "OroBot(1)"
+DEF OROBOT OrobotDark {
+  name "OroBotDark"
 }
