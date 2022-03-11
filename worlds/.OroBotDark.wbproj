@@ -7,5 +7,3 @@ centralWidgetVisible: 1
 orthographicViewHeight: 1
 textFiles: 1 "controllers/OrobotController/main.cpp" "controllers/OrobotController/source/robotSim.cpp" "controllers/OrobotController/header/robotSim.hpp"
 consoles: Console:All:All
-renderingDevicePerspectives: OroBot:left_eye;1;1;0.726862;4.38049e-08
-renderingDevicePerspectives: OroBot:right_eye;1;1;0;0

@@ -173,5 +173,7 @@ build/release/robotSim.o: source/robotSim.cpp \
  /home/thomas/webots/include/controller/cpp/webots/Accelerometer.hpp \
  /home/thomas/webots/include/controller/cpp/webots/Receiver.hpp \
  /home/thomas/webots/include/controller/cpp/webots/Compass.hpp \
+ /home/thomas/webots/include/controller/cpp/webots/Camera.hpp \
+ /home/thomas/webots/include/controller/cpp/webots/../../c/webots/camera_recognition_object.h \
  /home/thomas/webots/include/controller/cpp/webots/TouchSensor.hpp \
  /home/thomas/Documents/MasterThesis/orobot/controllers/OrobotController/header/misc_math.hpp
