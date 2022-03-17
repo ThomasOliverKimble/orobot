@@ -7,7 +7,3 @@ centralWidgetVisible: 1
 orthographicViewHeight: 1
 textFiles: -1
 consoles: Console:All:All
-renderingDevicePerspectives: orobot:left_eye;1;1;0;0
-renderingDevicePerspectives: orobot:right_eye;1;1;0;0
-renderingDevicePerspectives: orobotDark:left_eye;1;1;0;0
-renderingDevicePerspectives: orobotDark:right_eye;1;1;0;0
