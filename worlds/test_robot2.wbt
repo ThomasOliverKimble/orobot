@@ -4,7 +4,7 @@ WorldInfo {
     "Author: Thomas Kimble"
     "Date: 22.02.2022"
   ]
-  title "OroBot Simulation"
+  title "Test Simlation 2"
   window "orobot"
   physics "contact_points_physics"
   basicTimeStep 2

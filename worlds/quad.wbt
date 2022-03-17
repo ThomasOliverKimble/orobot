@@ -4,7 +4,7 @@ WorldInfo {
     "Author: Thomas Kimble"
     "Date: 22.02.2022"
   ]
-  title "OroBot Simulation"
+  title "OroBot Opposites"
   window "orobot"
   physics "contact_points_physics"
   basicTimeStep 2
@@ -21,9 +21,9 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation -0.11589837667454037 -0.6459423585048812 -0.754536967797707 2.291349088635492
-  position 3.234283913541229 2.0197489866534584 -2.6710148183670626
-  follow "OroBot"
+  orientation -0.07496533654591843 -0.6796857180163273 -0.7296626090469395 2.49
+  position 3.28 1.61 -2.19
+  follow "orobotDark"
 }
 TexturedBackground {
 }
@@ -55,5 +55,18 @@ SpotLight {
   castShadows TRUE
 }
 DEF OROBOT Orobot {
-  name "OroBot"
+  name "orobot"
+  translation 0 0.3 0.3
+}
+DEF OROBOT OrobotDark {
+  name "orobotDark"
+  translation 0 0.3 -0.3
+}
+DEF OROBOT Orobot {
+  name "orobot(1)"
+  translation 0 0.3 -0.9
+}
+DEF OROBOT OrobotDark {
+  name "orobotDark(1)"
+  translation 0 0.3 0.9
 }
