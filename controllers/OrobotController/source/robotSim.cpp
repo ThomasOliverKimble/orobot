@@ -23,10 +23,6 @@ RobotSim :: RobotSim(int TIME_STEP)
     compass->enable(TIME_STEP);
     gps=new webots::GPS("gps_fgirdle");
     gps->enable(TIME_STEP);
-    camera_left=new webots::Camera("left_eye");
-    camera_left->enable(4*TIME_STEP);
-    camera_right=new webots::Camera("right_eye");
-    camera_right->enable(4*TIME_STEP);
 
     gyroData=gyro->getValues();
     accData=acc->getValues();

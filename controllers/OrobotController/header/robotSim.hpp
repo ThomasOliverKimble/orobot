@@ -19,7 +19,6 @@
 #include <webots/Accelerometer.hpp>
 #include <webots/Receiver.hpp>
 #include <webots/Compass.hpp>
-#include <webots/Camera.hpp>
 #include <webots/TouchSensor.hpp>
 #include <webots/Node.hpp>
 #include <webots/Field.hpp>
@@ -46,8 +45,6 @@ class RobotSim : public webots::Supervisor{
     //================== public variables ===============================================
     vector<webots::Motor*> rm_motor;
     vector<webots::PositionSensor*> ps_motor;
-    webots::Camera *camera_left;
-    webots::Camera *camera_right;
     webots::Gyro *gyro;
     webots::Accelerometer *acc;
     webots::Compass *compass;

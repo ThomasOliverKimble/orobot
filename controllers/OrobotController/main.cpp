@@ -3,7 +3,6 @@
 #include <webots/Motor.hpp>
 #include <webots/Robot.hpp>
 #include <webots/Gyro.hpp>
-#include <webots/Camera.hpp>
 #include <iostream>
 #include <cmath>
 #include "Eigen/Dense"

@@ -8,8 +8,6 @@ build/release/main.o: main.cpp \
  /home/thomas/webots/include/controller/cpp/webots/Robot.hpp \
  /home/thomas/webots/include/controller/cpp/webots/Motor.hpp \
  /home/thomas/webots/include/controller/cpp/webots/Gyro.hpp \
- /home/thomas/webots/include/controller/cpp/webots/Camera.hpp \
- /home/thomas/webots/include/controller/cpp/webots/../../c/webots/camera_recognition_object.h \
  /home/thomas/Documents/MasterThesis/orobot/controllers/OrobotController/Libraries/Eigen/Dense \
  /home/thomas/Documents/MasterThesis/orobot/controllers/OrobotController/Libraries/Eigen/Core \
  /home/thomas/Documents/MasterThesis/orobot/controllers/OrobotController/Libraries/Eigen/src/Core/util/DisableStupidWarnings.h \
