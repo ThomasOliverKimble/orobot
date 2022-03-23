@@ -10,7 +10,7 @@ simulation:
     - file: worlds/OroBot_Uneven.wbt
     - file: worlds/OroBot_opposites.wbt
     
-type: demo
+type: benchmark
     
 animation:
   worlds:
