@@ -21,4 +21,4 @@ animation:
     
     - file: worlds/OroBot_Uneven.wbt
       duration: 5s
-publish: false
+publish: true
