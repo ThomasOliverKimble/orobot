@@ -9,4 +9,11 @@ simulation:
     
     - file: worlds/OroBot_Uneven.wbt
     - file: worlds/OroBot_opposites.wbt
+    
+animation:
+  worlds:
+  
+    - file: worlds/OroBot.wbt
+      duration: 10s
+    - file: worlds/OroBot_Uneven.wbt
 publish: true
