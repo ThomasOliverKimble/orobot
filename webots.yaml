@@ -1,7 +1,6 @@
 
 uses: docker://benjamindeleze/webots-test:robot
 
-publish: true
 
 type: demo
 simulation:
@@ -18,3 +17,4 @@ animation:
     - file: worlds/OroBot.wbt
       duration: 10s
     - file: worlds/OroBot_Uneven.wbt
+publish: true
