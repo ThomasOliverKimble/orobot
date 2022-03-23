@@ -1,8 +1,12 @@
+
 uses: docker://benjamindeleze/webots-test:robot
+
 type: demo
 simulation:
   worlds:
+  
     - file: worlds/OroBot.wbt
+    
     - file: worlds/OroBot_Uneven.wbt
     - file: worlds/OroBot_opposites.wbt
 publish: true
