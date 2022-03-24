@@ -11,14 +11,5 @@ simulation:
     - file: worlds/OroBot_opposites.wbt
     
 type: demo
-    
-animation:
-  worlds:
-  
-    - file: worlds/OroBot.wbt
-      duration: 10s
-    - file: worlds/OroBot_opposites.wbt
-    
-    - file: worlds/OroBot_Uneven.wbt
-      duration: 5s
+
 publish: true
