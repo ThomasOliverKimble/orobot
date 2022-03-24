@@ -1,14 +1,13 @@
 
 uses: docker://benjamindeleze/webots-test:robot
 
+world: worlds/OroBot.wbt
+worlds:
 
-simulation:
-  worlds:
-  
-    - file: worlds/OroBot.wbt
-    
-    - file: worlds/OroBot_Uneven.wbt
-    - file: worlds/OroBot_opposites.wbt
+  - file: worlds/OroBot.wbt
+
+  - file: worlds/OroBot_Uneven.wbt
+  - file: worlds/OroBot_opposites.wbt
     
 type: demo
 
