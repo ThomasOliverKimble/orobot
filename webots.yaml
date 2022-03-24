@@ -1,7 +1,7 @@
 
 uses: docker://benjamindeleze/webots-test:robot
 
-world: worlds/OroBot.wbt
+
 worlds:
 
   - file: worlds/OroBot.wbt
