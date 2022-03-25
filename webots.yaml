@@ -1,14 +1,6 @@
-
-uses: docker://benjamindeleze/webots-test:robot
-
-
 worlds:
-
   - file: worlds/OroBot.wbt
-
   - file: worlds/OroBot_Uneven.wbt
   - file: worlds/OroBot_opposites.wbt
-    
 type: demo
-
 publish: true
