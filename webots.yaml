@@ -1,5 +1,5 @@
 worlds:
-  - file: worlds/OroBot_Uneven.wbt
-  - file: worlds/OroBot_opposites.wbt
+  - file: OroBot_Uneven.wbt
+  - file: OroBot_opposites.wbt
 type: demo
 publish: true
