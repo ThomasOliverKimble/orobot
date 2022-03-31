@@ -1,6 +1,8 @@
 type: demo
 init: |
-  apt install -y
+  apt install -y \
     python3-numpy \
-    python3-opencv
+    python3-opencv \ 
+    test-lib \
+    last-lib
 publish: true
