@@ -1,6 +1,4 @@
-# FROM thomaskimble/webots:testing
-# FROM benjamindeleze/webots-test:robot
-FROM benjamindeleze/webots-test:robotsTypeLowGraphics
+FROM benjamindeleze/webots-test:R2022b1LG
 ARG PROJECT_PATH
 RUN mkdir -p $PROJECT_PATH
 COPY . $PROJECT_PATH
