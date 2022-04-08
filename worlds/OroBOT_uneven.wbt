@@ -4,7 +4,7 @@ WorldInfo {
     "Author: Thomas Kimble"
     "Date: 25.02.2022"
   ]
-  title "OroBot Simulation on Uneven Terrain"
+  title "OroBOT Simulation on Uneven Terrain"
   window "orobot"
   physics "contact_points_physics"
   basicTimeStep 2
