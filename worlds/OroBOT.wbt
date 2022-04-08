@@ -1,10 +1,10 @@
-#VRML_SIM R2022a utf8
+#VRML_SIM R2022b utf8
 WorldInfo {
-  title "OroBot Simulation"
   info [
     "Author: Thomas Kimble"
     "Date: 22.02.2022"
   ]
+  title "OroBOT Simulation"
   window "orobot"
   physics "contact_points_physics"
   basicTimeStep 2
@@ -22,7 +22,7 @@ WorldInfo {
 }
 Viewpoint {
   orientation -0.075037974862647 -0.6791518275259343 -0.7301521057264 2.4904201730363433
-  position 1.6368276815299732 0.9683176156907589 -1.1989545572774452
+  position 1.967643407159205 1.2750919535617955 -1.936898573575541
   follow "OroBot"
 }
 TexturedBackground {
@@ -56,5 +56,4 @@ SpotLight {
 }
 DEF OROBOT Orobot {
   name "OroBot"
-  controller "OrobotController"
 }

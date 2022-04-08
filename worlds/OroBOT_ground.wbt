@@ -4,7 +4,7 @@ WorldInfo {
     "Author: Thomas Kimble"
     "Date: 25.02.2022"
   ]
-  title "OroBot Simulation on Uneven Terrain"
+  title "OroBot on Sandy Ground"
   window "orobot"
   physics "contact_points_physics"
   basicTimeStep 2
@@ -21,8 +21,8 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation -0.044950153330713255 -0.6693001876620074 -0.7416311364223775 2.4221438001674724
-  position 1.610425823252291 1.1032619180491674 -1.105104059395927
+  orientation -0.10633999686499601 -0.6799428770740041 -0.725513258998813 2.4963662192018408
+  position 1.5846154885570525 1.004684523517472 -1.613788555612545
   follow "OroBot"
 }
 TexturedBackground {

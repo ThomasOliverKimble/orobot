@@ -4,7 +4,7 @@ WorldInfo {
     "Author: Thomas Kimble"
     "Date: 22.02.2022"
   ]
-  title "OroBot Opposites"
+  title "OroBOT Opposites"
   window "orobot"
   physics "contact_points_physics"
   basicTimeStep 2
@@ -21,8 +21,8 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation -0.07496533654591843 -0.6796857180163273 -0.7296626090469395 2.49
-  position 3.28 1.61 -2.19
+  orientation -0.13812320995834537 -0.6709990480682666 -0.7284794138218889 2.429211498318048
+  position 2.9042601503508876 1.8007928974516083 -3.4579548716573263
   follow "orobotDark"
 }
 TexturedBackground {
