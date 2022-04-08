@@ -1,0 +1,11 @@
+Webots Proto Cache File version 1.5
+protoFileHash: 185a23febc67fca64b8ddc9d219d5a9f
+needsRobotAncestor: 1
+baseType: Robot
+slotType: 
+parameters: supervisor,translation,rotation,name,window,controller
+tags: hidden
+license: 
+licenseUrl: 
+documentationUrl: 
+info: Supervisor\sthat\smanages\sthe\sPioneer\ssquare\spath\sbenchmark.

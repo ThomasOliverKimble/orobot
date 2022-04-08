@@ -1,0 +1,11 @@
+Webots Proto Cache File version 1.5
+protoFileHash: c4f998ba6f27cfd2c0410af8ba944308
+needsRobotAncestor: 0
+baseType: Transform
+slotType: 
+parameters: position,rotation,zero_pitch,footLocation,seg_2_location,seg_2_starting,seg_1_size,seg_2_size,seg_1_mass,seg_2_mass,springConstant1,springConstant2,springConstant3,dampingConstant1,dampingConstant2,dampingConstant3,contactMat
+tags: 
+license: 
+licenseUrl: 
+documentationUrl: 
+info: 
