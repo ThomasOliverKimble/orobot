@@ -6,7 +6,7 @@ WorldInfo {
     "Nature 565, 351–355; 2019."
     "https://www.nature.com/articles/s41586-018-0851-2"
   ]
-  title "OroBOT Opposites"
+  title "OroBOT Simulation"
   window "orobot"
   physics "contact_points_physics"
   basicTimeStep 2
@@ -23,9 +23,9 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation -0.12844169618264295 -0.63688554731986 -0.7601838792665941 2.2458432475445402
-  position 4.202535116605282 2.639330343383752 -3.703376819323309
-  follow "orobotDark"
+  orientation -0.1341397693834238 -0.6498319579655791 -0.7481476783873514 2.310786041542047
+  position 3.3787247172292916 1.8376442020863972 -2.8397496773388977
+  follow "OroBot"
 }
 TexturedBackground {
 }
@@ -57,8 +57,5 @@ SpotLight {
   castShadows TRUE
 }
 DEF OROBOT Orobot {
-  translation 0 0.3 0.5
-}
-DEF OROBOT OrobotDark {
-  translation 0 0.3 -0.5
+  name "OroBot"
 }
