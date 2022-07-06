@@ -1,4 +1,11 @@
 #VRML_SIM R2022b utf8
+
+EXTERNPROTO "../protos/Orobot.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/SandyGround.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/trees/protos/PalmTree.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/rocks/protos/Rock17cm.proto"
+
 WorldInfo {
   info [
     "John A. Nyakatura, Kamilo Melo, Tomislav Horvat, Kostas Karakasiliotis, Vivian R. Allen, Amir Andikfar, Emanuel Andrada, Patrick Arnold, Jonas Lauströer, John R. Hutchinson, Martin S. Fischer and Auke J. Ijspeert."
