@@ -1,6 +1,8 @@
 #VRML_SIM R2022b utf8
 
 EXTERNPROTO "../protos/Orobot.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/Floor.proto"
 
 WorldInfo {
   info [
