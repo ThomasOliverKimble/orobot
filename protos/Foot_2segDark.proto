@@ -1,3 +1,7 @@
+#VRML_SIM R2022b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/Marble.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/RoughPolymer.proto"
  
 PROTO Foot_2segDark [
   field SFVec3f    position   0.11 -0.020 0
