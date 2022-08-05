@@ -13,7 +13,7 @@ WorldInfo {
     "https://www.nature.com/articles/s41586-018-0851-2"
   ]
   title "OroBOT Opposites"
-  window "orobot"
+  window "<none>"
   physics "contact_points_physics"
   basicTimeStep 2
   FPS 30
