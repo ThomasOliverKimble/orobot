@@ -59,7 +59,7 @@ Controller :: getParameters()
         stringstream_file>>girdLoc(0);
         stringstream_file>>girdLoc(1);
 
-        //cout << "girdLoc " << girdLoc.transpose() << endl;
+        cout << "girdLoc " << girdLoc.transpose() << endl;
 
 
         trunk_kin.setZero();
@@ -71,32 +71,32 @@ Controller :: getParameters()
         // IG
         IG=trunk_kin.sum();
 
-        //cout << "!!!!!!!!!!!!!!!!!!IG!!!!!!!!!!!!!!!!!!!: " << IG << endl;
+        cout << "!!!!!!!!!!!!!!!!!!IG!!!!!!!!!!!!!!!!!!!: " << IG << endl;
         // legs
         for(i=0;i<5;i++){
             for(j=0;j<3;j++){
                 stringstream_file>>FL_kin(i, j); 
             }
         }    
-        //cout<<"FL_kin\n"<<FL_kin<<endl;
+        cout<<"FL_kin\n"<<FL_kin<<endl;
         for(i=0;i<5;i++){
             for(j=0;j<3;j++){
                 stringstream_file>>FR_kin(i, j);
             }
         }   
-        //cout<<"FR_kin\n"<<FR_kin<<endl;
+        cout<<"FR_kin\n"<<FR_kin<<endl;
         for(i=0;i<5;i++){
             for(j=0;j<3;j++){
                 stringstream_file>>HL_kin(i, j);
             }
         }   
-        //cout<<"HL_kin\n"<<HL_kin<<endl;
+        cout<<"HL_kin\n"<<HL_kin<<endl;
         for(i=0;i<5;i++){
             for(j=0;j<3;j++){
                 stringstream_file>>HR_kin(i, j);
             }
         }       
-        //cout<<"HR_kin\n"<<HR_kin<<endl;
+        cout<<"HR_kin\n"<<HR_kin<<endl;
 
 
         for(i=0; i<NUM_MOTORS; stringstream_file>>angSignsCorrIkin2Webots[i], i++);
@@ -127,10 +127,10 @@ Controller :: getParameters()
         stringstream_file>>spineCPGscaling(1);
   
          // duty cycles for legs (front and hind)
-        for(i=0; i<2; stringstream_file>>Duty(i), i++);      //cout<<Duty.transpose()<<endl;
+        for(i=0; i<2; stringstream_file>>Duty(i), i++);      cout<<Duty.transpose()<<endl;
 
         // phase shift between legs
-        for(i=0; i<4; stringstream_file>>phShifts(i), i++);  //cout<<phShifts.transpose()<<endl;
+        for(i=0; i<4; stringstream_file>>phShifts(i), i++);  cout<<phShifts.transpose()<<endl;
             
         // trajectories MID STANCE
         for(i=0; i<3; i++){
@@ -192,13 +192,13 @@ Controller :: getParameters()
 
         // constraints
         for(i=0; i<4; stringstream_file>>constrFL(0, i), constrFL(0, i)*=my_pi/180., i++);
-        for(i=0; i<4; stringstream_file>>constrFL(1, i), constrFL(1, i)*=my_pi/180., i++);   //cout<<constrFL.transpose()<<endl;
+        for(i=0; i<4; stringstream_file>>constrFL(1, i), constrFL(1, i)*=my_pi/180., i++);   cout<<constrFL.transpose()<<endl;
         for(i=0; i<4; stringstream_file>>constrFR(0, i), constrFR(0, i)*=my_pi/180., i++);
-        for(i=0; i<4; stringstream_file>>constrFR(1, i), constrFR(1, i)*=my_pi/180., i++);   //cout<<constrFR.transpose()<<endl;
+        for(i=0; i<4; stringstream_file>>constrFR(1, i), constrFR(1, i)*=my_pi/180., i++);   cout<<constrFR.transpose()<<endl;
         for(i=0; i<4; stringstream_file>>constrHL(0, i), constrHL(0, i)*=my_pi/180., i++);
-        for(i=0; i<4; stringstream_file>>constrHL(1, i), constrHL(1, i)*=my_pi/180., i++);   //cout<<constrHL.transpose()<<endl;
+        for(i=0; i<4; stringstream_file>>constrHL(1, i), constrHL(1, i)*=my_pi/180., i++);   cout<<constrHL.transpose()<<endl;
         for(i=0; i<4; stringstream_file>>constrHR(0, i), constrHR(0, i)*=my_pi/180., i++);
-        for(i=0; i<4; stringstream_file>>constrHR(1, i), constrHR(1, i)*=my_pi/180., i++);   //cout<<constrHR.transpose()<<endl;
+        for(i=0; i<4; stringstream_file>>constrHR(1, i), constrHR(1, i)*=my_pi/180., i++);   cout<<constrHR.transpose()<<endl;
         stringstream_file >> constrS;
 
         /*
@@ -221,12 +221,10 @@ Controller :: getParameters()
         for(i=0; i<4; stringstream_file>>q0HL(i), q0HL(i)*=my_pi/180., i++);
         for(i=0; i<4; stringstream_file>>q0HR(i), q0HR(i)*=my_pi/180., i++);
 
-        /*
         cout << "q0FL "<< q0FL.transpose() << endl;
         cout << "q0FR "<< q0FR.transpose() << endl;
         cout << "q0HL "<< q0HL.transpose() << endl;
         cout << "q0HR "<< q0HR.transpose() << endl;
-        */
         // lam, M, Cinv and max_dist for iKinDLS
         
         stringstream_file >> lamF(0);
@@ -297,7 +295,7 @@ Controller :: getParameters()
 
 
 
-    if(file_orobotSpecific.is_open()){ cout<<"FILE_OROBOTSPECIFIC OPENED"<<endl;
+    if(file_orobotSpecific.is_open()){ cout<<"FILE_OROBOT_SPECIFIC_OPENED"<<endl;
         
 
         readFileWithLineSkipping(file_orobotSpecific, stringstream_file);
@@ -350,11 +348,11 @@ Controller :: getParameters()
         for(i=0; i<4; stringstream_file>>or_MF(0, i), i++);
         for(i=0; i<4; stringstream_file>>or_MF(1, i), i++);
         for(i=0; i<4; stringstream_file>>or_MF(2, i), i++);
-        for(i=0; i<4; stringstream_file>>or_MF(3, i), i++);   //cout<<"or_MF: \n"<<or_MF<<endl<<endl;
+        for(i=0; i<4; stringstream_file>>or_MF(3, i), i++);   cout<<"or_MF: \n"<<or_MF<<endl<<endl;
         for(i=0; i<4; stringstream_file>>or_MH(0, i), i++);
         for(i=0; i<4; stringstream_file>>or_MH(1, i), i++);
         for(i=0; i<4; stringstream_file>>or_MH(2, i), i++);
-        for(i=0; i<4; stringstream_file>>or_MH(3, i), i++);   //cout<<"or_MH: \n"<<or_MH<<endl<<endl;
+        for(i=0; i<4; stringstream_file>>or_MH(3, i), i++);   cout<<"or_MH: \n"<<or_MH<<endl<<endl;
 
 
     }

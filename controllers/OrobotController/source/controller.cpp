@@ -41,7 +41,7 @@ Controller :: Controller(double time_step) : HJs(12), HJs_g(12), HJfl(5), HJfr(5
     //############################ PARAMETERS ########################################################
     getParameters();
 
-    cout<<"PARAMETERS READ SUCCESSFULLY"<<endl;
+    cout<<"I successfully read the parameters"<<endl;
     state=INITIAL;
 
 
@@ -77,8 +77,8 @@ Controller :: Controller(double time_step) : HJs(12), HJs_g(12), HJfl(5), HJfr(5
 
 
 
-    //cout << "NUM MOTORS:\t" << NUM_MOTORS << endl;
-    //cout << "SPINE_SIZE:\t" << SPINE_SIZE << endl;
+    cout << "NUM MOTORS:\t" << NUM_MOTORS << endl;
+    cout << "SPINE_SIZE:\t" << SPINE_SIZE << endl;
 
     feetReference = midStance;
 
@@ -456,17 +456,15 @@ Controller :: initOrobot()
     double kin_off=or_Ltot*(1-or_deltaphi)-IG+or_deltaFH;  //dkin = or_deltaFH - IG + or_Ltot*phi
     or_deltaLf=kin_off  + legs_offset;
     or_deltaLh=0        + legs_offset;
-    /*
     cout << "or_deltaFH= " << or_deltaFH  << endl;
     cout << "or_deltaLf= " << or_deltaLf <<" \t or_deltaLh= " << or_deltaLh << endl;
     cout << "delta_phi= " << or_deltaphi  << endl;
     cout << "IG= " << IG  << endl;
     cout << "or_Lf= " << or_Lf  << endl;
-    */
 
 
     // Phase
-    //cout << "Duty  = " << Duty << endl;
+    cout << "Duty  = " << Duty << endl;
     //cout << "deltaPhi = " << or_deltaphi << endl;
 
     phShifts(0)=or_phase_FL;
@@ -543,11 +541,9 @@ Controller :: initOrobot()
     swing_width(2)=or_deltaWh;
     swing_width(3)=-or_deltaWh;
 
-    /*
     cout << "ellipse_a= " << ellipse_a.transpose()  << endl;
     cout << "or_deltaLf= " << or_deltaLf <<" \t or_deltaLh= " << or_deltaLh << endl;
     cout << "delta_phi= " << or_deltaphi  << endl;
-    */
 
 }
 
@@ -586,7 +582,7 @@ Controller :: setOrobotParameters(double or_freq, double or_spine, double or_hei
 void
 Controller :: parseParameterString(string str)
 {   
-    static double or_freq=0.5, or_spine=0.4, or_height=-0.2, or_rvy=0.4;
+    static double or_freq=0.5, or_spine=0.4, or_height=-0.1914, or_rvy=0.4286;
     size_t found; 
     found = str.find("scaling");
     if (found!=string::npos){
@@ -612,10 +608,12 @@ Controller :: parseParameterString(string str)
         or_freq = stod(str.substr(found+1));
     }
 
-    found = str.find("restart");
-    if (found!=string::npos){
-        int t = 0;
-    }
+    setOrobotParameters( or_freq,  or_spine,  or_height,  or_rvy);
 
-    setOrobotParameters(or_freq,  or_spine,  or_height,  or_rvy);
+
+
+
+
+
+
 }

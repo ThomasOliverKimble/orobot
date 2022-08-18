@@ -85,7 +85,6 @@ class RobotSim : public webots::Supervisor{
     void getPositionFeedback(double *d_posture);
     void getAngles(double *table);
     void set2segFeetParam(double spring1, double spring2);
-    void resetOrobotSimulation();
     void startVideoRecording(const string& filename, int width, int height);
     void stopVideoRecording();
   private:

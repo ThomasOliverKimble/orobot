@@ -1,8 +1,9 @@
- 
+
 #include <webots/Supervisor.hpp>
 #include <webots/Motor.hpp>
 #include <webots/Robot.hpp>
 #include <webots/Gyro.hpp>
+#include <webots/Camera.hpp>
 #include <iostream>
 #include <cmath>
 #include "Eigen/Dense"
@@ -22,8 +23,12 @@
 #include "joystick.h"
 
 
+
+
+
+
 #define TIME_STEP   10
-#define MAX_NUM_MOTORS   40 
+#define MAX_NUM_MOTORS   40
 
 // load global config
 int readGlobalConfig();
@@ -81,7 +86,7 @@ int main(int argc, char **argv)
 
 
 
-    //cout << "creating controller" << endl;
+    cout << "creating controller" << endl;
     Controller controller(Td);
 
     cout<<"CONTROLLER CREATED"<<endl;
@@ -115,18 +120,10 @@ cout << "STARTING THE LOOP" << endl;
 
         const std::string text = robotSim.wwiReceiveText();
         if (!text.empty())
-          cout << "MESSAGE RECEIVED: " << text << endl;
+          cout << "Received " << text << endl;
 
         // parse parameter string
         controller.parseParameterString(text);
-
-        // restart sim
-        size_t found; 
-        found = text.find("restart");
-        if (found!=string::npos){
-            cout << "RESTARTING SIMULATION" << endl;
-            robotSim.resetOrobotSimulation();
-        }
         
         dt=Td;
         t=t+dt;
